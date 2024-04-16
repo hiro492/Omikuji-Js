@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+:root {
+  --background-color: red;
+  --shadow-color: #333;
+}
+
+main {
+  width: 240px;
+  margin: 32px auto;
+}
+
+section {
+  border: 4px double var(--background-color);
+  margin-bottom: 24px;
+  text-align: center;
+  color: red;
+}
+
+
+button {
+  display: block;
+  /* ブロック要素として表示 */
+  margin: 0 auto;
+  /* 上下のマージンは0、左右のマージンは自動で中央揃え */
+  border-radius: 5px;
+  /* 角丸の半径を5pxに設定 */
+  background-color: var(--background-color);
+  /* 背景色を赤に設定 */
+  color: white;
+  /* テキスト色を白に設定 */
+  padding: 10px 20px;
+  /* パディングを上下10px、左右20pxに設定 */
+  border: none;
+  /* ボーダーを非表示に設定 */
+  cursor: pointer;
+  /* カーソルをポインターに設定 */
+  font-size: 16px;
+  /* フォントサイズを16pxに設定 */
+  box-shadow: 0 5px 0 var(--shadow-color);
+  transition: .3s;
+}
+
+button:hover {
+  transform: translateY(5px);
+  box-shadow: 0 0 0 var(--shadow-color);
+
+
+}
+button:active{
+  background-color: var(--shadow-color);
+}
+
